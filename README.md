@@ -4,7 +4,7 @@
 * Save data to local storage
 * Vue Toastification for notifications
 * <script setup> syntax (Vue 3.2+)
-![Image alt text](https://i.pinimg.com/originals/b9/02/f2/b902f270adf0661ebf60f50cfb90d8eb.png)
+![Image alt text](https://i.pinimg.com/736x/0a/75/8a/0a758a80a24935f1cd5b24c82afaf4d8.jpg)
 
 ## Project Setup
 
