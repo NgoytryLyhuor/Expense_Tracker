@@ -2,7 +2,7 @@
 <template>
   <Header />
   <div class="container">
-    <Balance :total="+total" />
+    <Balance :total="+total" :totalInRiel="+totalInRiel" />
     <IncomeExpenses :income="+income" :expenses="+expenses" />
     <TransactionList :transactions="transactions"  @transactionDeleted="handleTransactionDeleted" />
     <AddTransaction @transactionSubmitted="handleTransactionSubmitted"/>
@@ -32,6 +32,11 @@ onMounted(()=>{
 const total = computed(() => {
   return transactions.value.reduce((acc, transaction) => {
     return acc + transaction.amount;
+  }, 0);
+});
+const totalInRiel = computed(() => {
+  return transactions.value.reduce((acc, transaction) => {
+    return acc + transaction.amount * 4124;
   }, 0);
 });
 
